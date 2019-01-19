@@ -1,0 +1,131 @@
+@charset "utf-8";
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5% !important;   /* 根元素是10px;     16*62.5%=10  默认在pc端根元素会解析成12px    */
+}
+
+body {
+  font: 12px/1.5 'Microsoft YaHei','宋体', Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #F7F7F7;
+}
+em, i {
+  font-style: normal;
+}
+ul,li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+strong {
+  font-weight: normal;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.footer_nav{
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  left: 2rem;
+  bottom: 1rem;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  border-radius: 50%;
+  img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-top: .8rem;
+  }
+  p{
+    margin-top: -.1rem;
+  }
+}
+.footer_book{
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  left: 43%;
+  bottom: 1rem;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  border-radius: 50%;
+  img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-top: .8rem;
+  }
+  p{
+    margin-top: -.1rem;
+  }
+  a{
+    color: #eee;
+  }
+
+}
+.footer_cart{
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  right: 2rem;
+  bottom: 1rem;
+  color: #fff;
+  background: red;
+  text-align: center;
+  border-radius: 50%;
+  img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-top: .8rem;
+  }
+  p{
+    margin-top: -.1rem;
+  }
+  .num{
+    position: absolute;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background: red;
+    top: -.5rem;
+    right: -.5rem;
+  }
+  a{
+    color: #fff;
+  }
+}
+.back{
+  width: 3.8rem;
+  height: 3.8rem;
+  line-height: 3.8rem;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  top: .5rem;
+  left: .5rem;
+  position: fixed;
+  &:before{
+    content: '';
+    height: .8rem;
+    width: .8rem;
+    display: inline-block;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    margin-left: .4rem;
+    margin-right: -.2rem;
+  }
+}
