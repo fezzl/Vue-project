@@ -3,7 +3,7 @@
     <div id="cart">
 
           <div class="cart_content">
-    
+            <v-back></v-back>
             <div class="cart_info" v-if="allNum">
     
     
@@ -149,6 +149,7 @@
     import Config from '../model/config.js'
     import Axios from 'axios';
     import NavFooter from './public/NavFooter.vue';
+    import Back from './public/Back.vue';
     export default{
 
         data () {
@@ -225,7 +226,8 @@
                 })
           }
         },components:{
-          'v-navfooter':NavFooter
+          'v-navfooter':NavFooter,
+          'v-back':Back
       },
       mounted() {
           this.requestData();

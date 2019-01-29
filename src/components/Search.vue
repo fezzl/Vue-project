@@ -1,7 +1,7 @@
 <template>
     
     <div id="search">
-
+       <v-back></v-back>
       <header class="search_header header">
         <input class="search" type="search" />
       </header>
@@ -65,6 +65,7 @@
 
 <script>
   import NavFooter from './public/NavFooter.vue';
+  import Back from './public/Back.vue';
     export default{
 
         data () {
@@ -72,7 +73,8 @@
                     msg: 'Welcome to Your Vue.js App'
             }
         },components:{
-        'v-navfooter':NavFooter
+        'v-navfooter':NavFooter,
+        'v-back':Back
       }
     }
 </script>
@@ -83,7 +85,7 @@
     text-align: center;
     width: 100%;
     .search{
-      width: 90%;
+      width: 75%;
       height: 3.8rem;
       line-height: 3.8rem;
       border-radius: 0.5rem ;

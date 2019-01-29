@@ -1,9 +1,9 @@
 <template>
     
     <div id="pcontent">
-         <router-link to="/home">
-            <div class="back">首页</div>
-         </router-link>
+
+        <v-back></v-back>
+
           <div class="p_content">
             <div class="p_info">
               <img :src="api+list.img_url" style="height: 28rem" alt=""/>
@@ -45,6 +45,7 @@
 <script>
     import Axios from 'axios';
     import Config from '../model/config.js';
+    import Back from './public/Back.vue';
     export default{
 
         data () {
@@ -91,38 +92,20 @@
               .catch(err=>{
                 console.log(err);
               })
-        }
+        },
+
       },mounted() {
           let id=this.$route.query.id;
           this.requestData(id);
+      },
+      components:{
+          'v-back':Back
       }
 
     }
 </script>
 
 <style lang="scss">
-  .back{
-    width: 3.8rem;
-    height: 3.8rem;
-    line-height: 3.8rem;
-    background: #000;
-    color: #fff;
-    border-radius: 50%;
-    top: .5rem;
-    left: .5rem;
-    position: fixed;
-    &:before{
-      content: '';
-      height: .8rem;
-      width: .8rem;
-      display: inline-block;
-      border-left: 2px solid #fff;
-      border-bottom: 2px solid #fff;
-      transform: rotate(45deg);
-      margin-left: .4rem;
-      margin-right: -.2rem;
-    }
-  }
   .p_content{
 
     .p_info{

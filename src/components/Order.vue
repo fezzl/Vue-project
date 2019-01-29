@@ -3,9 +3,7 @@
     <div id="order">
 
         <div class="order_content">
-          <router-link to="/home">
-            <div class="back">首页</div>
-          </router-link>
+          <v-back></v-back>
 
           <div class="order_info">
 
@@ -93,13 +91,17 @@
 
 
 <script>
+  import Back from './public/Back.vue';
     export default{
 
         data () {
             return {
                     msg: 'Welcome to Your Vue.js App'
             }
-        }
+        },
+      components:{
+          'v-back':Back
+      }
     }
 </script>
 

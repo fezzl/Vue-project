@@ -1,6 +1,7 @@
 <template>
     
     <div id="hot">
+      <v-back></v-back>
       <header class="hot_header header">
         <p class="title">本店热销榜</p>
       </header>
@@ -66,6 +67,7 @@
 
 <script>
    import NavFooter from './public/NavFooter.vue';
+   import Back from './public/Back.vue';
     export default{
 
         data () {
@@ -73,7 +75,8 @@
                     msg: 'Welcome to Your Vue.js App'
             }
         },components:{
-        'v-navfooter':NavFooter
+        'v-navfooter':NavFooter,
+        'v-back':Back
       }
     }
 </script>
