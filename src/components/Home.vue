@@ -60,7 +60,9 @@
 
         <div class="bg" id="bg" ></div>
 
-        <v-navfooter></v-navfooter>
+         <keep-alive>
+            <v-navfooter></v-navfooter>
+         </keep-alive>
 
         <div id="footer_cart" class="footer_cart">
           <router-link to="/cart">

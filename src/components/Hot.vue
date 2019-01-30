@@ -1,7 +1,9 @@
 <template>
     
     <div id="hot">
-      <v-back></v-back>
+      <keep-alive>
+          <v-back></v-back>
+      </keep-alive>
       <header class="hot_header header">
         <p class="title">本店热销榜</p>
       </header>
@@ -38,11 +40,9 @@
 
       </div>
 
-
-
-
-      <v-navfooter></v-navfooter>
-
+      <keep-alive>
+          <v-navfooter></v-navfooter>
+      </keep-alive>
 
       <div id="footer_book" class="footer_book">
 

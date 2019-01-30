@@ -3,8 +3,9 @@
     <div id="order">
 
         <div class="order_content">
-          <v-back></v-back>
-
+          <keep-alive>
+              <v-back></v-back>
+          </keep-alive>
           <div class="order_info">
 
             <div class="order_top">

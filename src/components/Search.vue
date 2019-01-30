@@ -1,7 +1,9 @@
 <template>
     
     <div id="search">
+      <keep-alive>
        <v-back></v-back>
+      </keep-alive>
       <header class="search_header header">
         <input class="search" type="search" />
       </header>
@@ -38,11 +40,9 @@
 
       </div>
 
-
-
-
-      <v-navfooter></v-navfooter>
-
+      <keep-alive>
+          <v-navfooter></v-navfooter>
+      </keep-alive>
 
       <div id="footer_book" class="footer_book">
         <router-link to="home">

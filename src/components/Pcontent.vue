@@ -1,10 +1,10 @@
 <template>
     
     <div id="pcontent">
-
-        <v-back></v-back>
-
-          <div class="p_content">
+      <keep-alive>
+          <v-back></v-back>
+      </keep-alive>
+      <div class="p_content">
             <div class="p_info">
               <img :src="api+list.img_url" style="height: 28rem" alt=""/>
               <h2>{{list.title}}</h2>

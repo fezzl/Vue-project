@@ -3,7 +3,9 @@
     <div id="cart">
 
           <div class="cart_content">
-            <v-back></v-back>
+            <keep-alive>
+                <v-back></v-back>
+            </keep-alive>
             <div class="cart_info" v-if="allNum">
     
     
@@ -126,9 +128,9 @@
             <div class="cart_empty" v-if="!allNum">您的购物车空空的，点击下面的菜单开始点菜</div>
     
           </div>
-
-          <v-navfooter></v-navfooter>
-    
+          <keep-alive>
+              <v-navfooter></v-navfooter>
+          </keep-alive>
           <div id="footer_book" class="footer_book">
             <router-link to="/home">
             <img src="../assets/images/menu.png">
