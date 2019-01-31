@@ -138,11 +138,13 @@
               console.log(err);
             })
         }
-      },mounted() {
+      },
+      mounted() {
           this.upDataList();
           this.asideDomInit();
           this.getCartNum();
-      },components:{
+      },
+      components:{
           'v-navfooter':NavFooter
       }
     }
